@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4240811988504092}
   - component: {fileID: 212325885647548240}
   - component: {fileID: 61576371999344254}
-  - component: {fileID: 50606606815511510}
-  - component: {fileID: 114052578665063372}
+  - component: {fileID: 50766450582822596}
+  - component: {fileID: 114260489942972328}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -43,21 +43,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50606606815511510
+--- !u!50 &50766450582822596
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1437440773595368}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.04, y: 0.84}
   m_EdgeRadius: 0
---- !u!114 &114052578665063372
+--- !u!114 &114260489942972328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13fb031fa41b1a94eb2206b922c348f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 150
+  speed: 10
+  shotsPerSeconds: 0.5
+  projectile: {fileID: 1450888008108300, guid: b808429aa92ca5747b080b008e8b61b9, type: 2}
 --- !u!212 &212325885647548240
 SpriteRenderer:
   m_ObjectHideFlags: 1
